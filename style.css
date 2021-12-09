@@ -1,0 +1,27 @@
+body {
+  font-family: sans-serif;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  background: #f5b4a5;
+}
+.element {
+  font-weight: bold;
+  color: #f5b4a5;
+  font-size: 2.2em;
+  text-align: center;
+  padding: 2.4rem;
+  width: 22rem;
+  height: 12rem;
+  --plus-size: 8;
+  --plus-spacing-x: 24;
+  --plus-spacing-y: 24;
+  --plus-ratio: 0.2;
+  --plus-color: #f28167;
+  background: paint(plusgrid);
+}
+@supports (background: paint(plusgrid)) {
+  .announce {
+    display: none;
+  }
+}

@@ -5,5 +5,8 @@
   "main": "index.js",
   "author": "Tom Quinonero <tomquinonero@hey.com>",
   "license": "MIT",
-  "private": false
+  "private": false,
+  "devDependencies": {
+    "http-server": "^14.0.0"
+  }
 }
