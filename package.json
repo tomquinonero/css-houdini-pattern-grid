@@ -2,10 +2,24 @@
   "name": "css-houdini-plus-grid",
   "version": "1.0.0",
   "description": "A CSS Paint Worklet that displays a grid of plus symbol as the background. Highly customizable.",
-  "main": "index.js",
   "author": "Tom Quinonero <tomquinonero@hey.com>",
   "license": "MIT",
   "private": false,
+  "main": "worklet.js",
+  "props": "properties.js",
+  "keywords": [
+    "css",
+    "houdini",
+    "worklet"
+  ],
+  "homepage": "https://codepen.io/tomquinonero/pen/VwMjxvw",
+  "scripts": {
+    "dev": "http-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tomquinonero/css-houdini-plus-grid.git"
+  },
   "devDependencies": {
     "http-server": "^14.0.0"
   }
