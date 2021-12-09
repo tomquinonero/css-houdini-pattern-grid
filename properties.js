@@ -27,10 +27,9 @@ CSS.registerProperty({
 });
 
 CSS.registerProperty({
-  name: "--plus-spacing-clean",
-  syntax: "<number>",
+  name: "--plus-shape",
   inherits: false,
-  initialValue: 1,
+  initialValue: "plus",
 });
 
 CSS.registerProperty({

@@ -21,12 +21,24 @@ body {
   --plus-spacing-y-ratio: 1;
 }
 
-.paint-fix {
-  --plus-spacing-clean: 0;
+.paint-plus {
+  --plus-shape: plus;
 }
 
-.paint-stretch {
-  --plus-spacing-clean: 1;
+.paint-square {
+  --plus-shape: square;
+}
+
+.paint-circle {
+  --plus-shape: circle;
+}
+
+.paint-diamond {
+  --plus-shape: diamond;
+}
+
+.paint-half-square {
+  --plus-shape: half-square;
 }
 
 @supports (background: paint(plusgrid)) {
