@@ -13,32 +13,32 @@ body {
   padding: 2.4rem;
   width: 22rem;
   height: 12rem;
-  background: paint(plusgrid);
-  --plus-color: #f28167;
-  --plus-ratio: 0.2;
-  --plus-size: 6;
-  --plus-spacing: 8;
-  --plus-spacing-y-ratio: 1;
+  background: paint(pattern-grid);
+  --pattern-color: #f28167;
+  --pattern-ratio: 0.2;
+  --pattern-size: 6;
+  --pattern-spacing: 8;
+  --pattern-spacing-y-ratio: 1;
 }
 
 .paint-plus {
-  --plus-shape: plus;
+  --pattern-shape: plus;
 }
 
 .paint-square {
-  --plus-shape: square;
+  --pattern-shape: square;
 }
 
 .paint-circle {
-  --plus-shape: circle;
+  --pattern-shape: circle;
 }
 
 .paint-diamond {
-  --plus-shape: diamond;
+  --pattern-shape: diamond;
 }
 
 .paint-half-square {
-  --plus-shape: half-square;
+  --pattern-shape: half-square;
 }
 
 @supports (background: paint(plusgrid)) {

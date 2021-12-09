@@ -1,39 +1,39 @@
 CSS.registerProperty({
-  name: "--plus-size",
+  name: "--pattern-size",
   syntax: "<number>",
   inherits: false,
   initialValue: 4,
 });
 
 CSS.registerProperty({
-  name: "--plus-spacing",
+  name: "--pattern-spacing",
   syntax: "<number>",
   inherits: false,
   initialValue: 8,
 });
 
 CSS.registerProperty({
-  name: "--plus-spacing-y-ratio",
+  name: "--pattern-spacing-y-ratio",
   syntax: "<number>",
   inherits: false,
   initialValue: 1,
 });
 
 CSS.registerProperty({
-  name: "--plus-ratio",
+  name: "--pattern-ratio",
   syntax: "<number>",
   inherits: false,
   initialValue: 0.2,
 });
 
 CSS.registerProperty({
-  name: "--plus-shape",
+  name: "--pattern-shape",
   inherits: false,
   initialValue: "plus",
 });
 
 CSS.registerProperty({
-  name: "--plus-color",
+  name: "--pattern-color",
   syntax: "<color>",
   inherits: false,
   initialValue: "#f28167",

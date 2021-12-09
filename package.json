@@ -1,7 +1,7 @@
 {
-  "name": "css-houdini-plus-grid",
+  "name": "css-houdini-pattern-grid",
   "version": "1.0.3",
-  "description": "A CSS Paint Worklet that displays a grid of plus symbol as the background. Highly customizable.",
+  "description": "A CSS Paint Worklet that displays a grid of various shapes as the background. Highly customizable.",
   "author": "Tom Quinonero <tomquinonero@hey.com>",
   "license": "MIT",
   "private": false,

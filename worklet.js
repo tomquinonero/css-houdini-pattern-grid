@@ -1,4 +1,4 @@
-function drawPlus(ctx, shape, x, y, size, ratio) {
+function drawShape(ctx, shape, x, y, size, ratio) {
   console.log(shape);
 
   if (shape == "plus") {
@@ -40,29 +40,29 @@ function drawPlus(ctx, shape, x, y, size, ratio) {
   }
 }
 
-class Plusgrid {
+class PatternGrid {
   static get inputProperties() {
     return [
-      "--plus-spacing",
-      "--plus-spacing-y-ratio",
-      "--plus-size",
-      "--plus-color",
-      "--plus-ratio",
-      "--plus-amount",
-      "--plus-shape",
+      "--pattern-spacing",
+      "--pattern-spacing-y-ratio",
+      "--pattern-size",
+      "--pattern-color",
+      "--pattern-ratio",
+      "--pattern-amount",
+      "--pattern-shape",
     ];
   }
 
   paint(ctx, canvasSize, props) {
     // Get the CSS vars
-    const size = parseInt(props.get(`--plus-size`));
-    const shapeRatio = parseFloat(props.get(`--plus-ratio`));
-    const color = props.get(`--plus-color`);
-    const shape = props.get(`--plus-shape`)[0].trim();
+    const size = parseInt(props.get(`--pattern-size`));
+    const shapeRatio = parseFloat(props.get(`--pattern-ratio`));
+    const color = props.get(`--pattern-color`);
+    const shape = props.get(`--pattern-shape`)[0].trim();
 
     // These might change
-    let spacingX = parseInt(props.get(`--plus-spacing`));
-    let spacingY = spacingX * parseInt(props.get(`--plus-spacing-y-ratio`));
+    let spacingX = parseInt(props.get(`--pattern-spacing`));
+    let spacingY = spacingX * parseInt(props.get(`--pattern-spacing-y-ratio`));
     let offsetX = (spacingX - size) / 2;
     let offsetY = (spacingY - size) / 2;
 
@@ -82,10 +82,10 @@ class Plusgrid {
       let y = i * spacingY;
       for (let ii = 0; ii < xAmount; ii++) {
         let x = ii * spacingX;
-        drawPlus(ctx, shape, x + offsetX, y + offsetY, size, shapeRatio);
+        drawShape(ctx, shape, x + offsetX, y + offsetY, size, shapeRatio);
       }
     }
   }
 }
 
-registerPaint("plusgrid", Plusgrid);
+registerPaint("pattern-grid", PatternGrid);
