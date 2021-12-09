@@ -1,9 +1,11 @@
-const drawPlus = (ctx, x, y, size, ratio) => {
+function drawPlus(ctx, x, y, size, ratio) {
   const small = size * ratio;
   const offset = size / 2 - small / 2;
   ctx.fillRect(x, y + offset, size, small);
   ctx.fillRect(x + offset, y, small, size);
-};
+}
+
+console.log("test");
 
 class Plusgrid {
   static get inputProperties() {
@@ -26,15 +28,15 @@ class Plusgrid {
     const offsetX = (plusSpacingX - plusSize) / 2;
     const offsetY = (plusSpacingY - plusSize) / 2;
 
-    const lineAmount = size.height / plusSpacingX;
-    const colAmount = size.width / plusSpacingY;
+    const lineAmount = size.height / plusSpacingY;
+    const colAmount = size.width / plusSpacingX;
 
     ctx.fillStyle = color;
 
     for (let i = 0; i < lineAmount; i++) {
-      let y = i * plusSpacingX;
+      let y = i * plusSpacingY;
       for (let ii = 0; ii < colAmount; ii++) {
-        let x = ii * plusSpacingY;
+        let x = ii * plusSpacingX;
         drawPlus(ctx, x + offsetX, y + offsetY, plusSize, plusRatio);
       }
     }
