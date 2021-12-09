@@ -13,13 +13,22 @@ body {
   padding: 2.4rem;
   width: 22rem;
   height: 12rem;
-  --plus-size: 8;
-  --plus-spacing-x: 24;
-  --plus-spacing-y: 24;
-  --plus-ratio: 0.2;
-  --plus-color: #f28167;
   background: paint(plusgrid);
+  --plus-color: #f28167;
+  --plus-ratio: 0.2;
+  --plus-size: 6;
+  --plus-spacing: 8;
+  --plus-spacing-y-ratio: 1;
 }
+
+.paint-fix {
+  --plus-spacing-clean: 0;
+}
+
+.paint-stretch {
+  --plus-spacing-clean: 1;
+}
+
 @supports (background: paint(plusgrid)) {
   .announce {
     display: none;
