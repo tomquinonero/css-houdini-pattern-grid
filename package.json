@@ -1,6 +1,6 @@
 {
   "name": "css-houdini-pattern-grid",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A CSS Paint Worklet that displays a grid of various shapes as the background. Highly customizable.",
   "author": "Tom Quinonero <tomquinonero@hey.com>",
   "license": "MIT",
