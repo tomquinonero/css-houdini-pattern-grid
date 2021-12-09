@@ -62,7 +62,8 @@ class PatternGrid {
 
     // These might change
     let spacingX = parseInt(props.get(`--pattern-spacing`));
-    let spacingY = spacingX * parseInt(props.get(`--pattern-spacing-y-ratio`));
+    let spacingY =
+      spacingX * parseFloat(props.get(`--pattern-spacing-y-ratio`));
     let offsetX = (spacingX - size) / 2;
     let offsetY = (spacingY - size) / 2;
 
